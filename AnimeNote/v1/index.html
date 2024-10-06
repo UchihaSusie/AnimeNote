@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Anime Notes!</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="logo.png" height="86" width="86" alt="Daily Anime Note!" />
+          <h1>Today's Anime Note !!!</h1>
+        </div>
+        <button class="btn btn-large btn-open">SHARE A QUOTE</button>
+      </header>
+
+      <form class="fact-form hidden">
+        <input type="text" placeholder="fact" />
+        <input type="text" placeholder="anime" />
+        <input type="text" placeholder="source" />
+        <select>
+          <option value="">Choose category</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Action">Action</option>
+          <option value="Comedy">Comedy</option>
+        </select>
+        <button class="btn btn-large">Post</button>
+      </form>
+
+      <main class="main">
+        <aside>
+          <ul>
+            <li class="category">
+              <button class="btn btn-all-categories">All</button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #3b82f6"
+              >
+                Adventure
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #16a34a"
+              >
+                Action
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #ef4444"
+              >
+                Comedy
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <section>
+          <ul class="fact-list">
+            <li class="fact">
+              <p>
+                Uchiha Itachi (Naruto): People live their lives bound by what
+                they accept as correct and true, that is how they define
+                reality. But what does it mean to be correct or true? Merely
+                vague concepts, their reality may all be an illusion.
+                <a
+                  class="source"
+                  href="https://naruto.fandom.com/wiki/Itachi_Uchiha#cite"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #3b82f6"
+                >Adventure</span
+              >
+              <div class="vote-buttons">
+                <button>👍 24</button>
+                <button>🤯 9</button>
+                <button>⛔️ 4</button>
+              </div>
+            </li>
+            <li class="fact">
+              <p>
+                Eren Jaeger (Attack on Titan): We're born free. All of us. Free.
+                Some don't believe it, some try to take it away. To hell with
+                them!
+                <a
+                  class="source"
+                  href="https://www.techanimate.com/eren-jaeger-quotes/"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #16a34a">Action</span>
+              <div class="vote-buttons">
+                <button>👍 11</button>
+                <button>🤯 2</button>
+                <button>⛔️ 0</button>
+              </div>
+            </li>
+            <li class="fact">
+              <p>
+                Gintoki Sakata (Gintama): If you have time to think of a
+                beautiful end, then live beautiful until the end.
+                <a
+                  class="source"
+                  href="https://www.epicquotes.com/15-hilarious-gintoki-sakata-quotes-from-gintama/"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #ef4444">Comedy</span>
+              <div class="vote-buttons">
+                <button>👍 8</button>
+                <button>🤯 3</button>
+                <button>⛔️ 1</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
